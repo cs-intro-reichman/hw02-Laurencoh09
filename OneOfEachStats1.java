@@ -5,10 +5,10 @@
  * 	that determines how many families to simulate.
  */
 
-public class OneOfEachStats1 {
-   	public static void main (String[] args) {
 
-		
+public class OneOfEachStats1{
+   	public static void main (String[] args){
+
 		int T = Integer.parseInt(args[0]);
 		int num1 = 0, num2 = 0, num3 = 0, num4 = 0;
 		
@@ -18,8 +18,8 @@ public class OneOfEachStats1 {
    		boolean girl = false;
 
    		while(!boy || !girl ){ 
-   			
    double random = Math.random();
+			
    		if (random <= 0.5){
    			boy = true;	 
    		}
@@ -27,7 +27,6 @@ public class OneOfEachStats1 {
    			girl = true;
    		}
 children ++;
-
 	}
 			if (children == 2) {
 				num2++;
