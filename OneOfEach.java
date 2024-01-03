@@ -4,10 +4,9 @@
  *  to have children until they have at least one child of each gender.
  */
 
-public class OneOfEach {
-   	public static void main (String[] args) {
+public class OneOfEach{
+   	public static void main (String[] args){
 
-   	
    		int children = 0;
    		boolean boy = false; 
    		boolean girl = false;
@@ -23,14 +22,10 @@ public class OneOfEach {
    			girl = true;
    			System.out.print("g ");
    		}
-   		
-
 children++;
-
  }
  System.out.println( "You made it... " + " and you now have " + children + " children" );
 
-
-}
-
+         
+     }
 }
