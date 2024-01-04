@@ -42,17 +42,15 @@ children ++;
 			num1 += children;
 		}
 		double average = num1 / T;
-		System.out.println("Average: " + average + " children to get at least one of each gender.");
+	System.out.println("Average: " + average + " children to get at least one of each gender.");
 
-		                  System.out.println("Number of families with 2 children: " + num2);
+	     System.out.println("Number of families with 2 children: " + num2);
 
-		System.out.println("Number of families with 3 children: " + num3);
-		                   System.out.println("Number of families with 4 children: " + num4);
+System.out.println("Number of families with 3 children: " + num3);
+	         System.out.println("Number of families with 4 children: " + num4);
 		if (num2 > num3) {
-
-			               System.out.println("The most common number of children is 2.");
+		       System.out.println("The most common number of children is 2.");
 		} else if (num3 > num4) {
-
 			                 System.out.println("The most common number of children is 3.");
 		} else {
 			                System.out.println("The most common number of children is 4 or more.");
