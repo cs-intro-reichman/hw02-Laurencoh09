@@ -24,7 +24,7 @@ if (counter == x){
 System.out.println(res);
 } 
 else {
-        System.out.println(x + " is not a perfect number ");
+        System.out.println(x + " is not a perfect number");
 
    
    		}
