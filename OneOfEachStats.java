@@ -8,14 +8,15 @@ import java.util.Random;
  *  Example usage: % java OneOfEachStats 1000 1
  */
 
-	public class OneOfEachStats {
-	
-		public static void main (String[] args) {
+
+public class OneOfEachStats {
+   	public static void main (String[] args) {
 
 		
 		int T = Integer.parseInt(args[0]);
 		int seed = Integer.parseInt(args[1]);
-		int num1 = 0, num2 = 0, num3 = 0, num4 = 0;
+		double num1 = 0.0;
+		int num2 = 0, num3 = 0, num4 = 0;
 		Random generator = new Random(seed);
 
 		for (int i = 1; i <= T; i++) {
@@ -23,16 +24,15 @@ import java.util.Random;
    		boolean boy = false; 
    		boolean girl = false;
 
-   		while(!boy || !girl ){ 
+   		while(!boy || !girl) { 
    			
-   double random = generator.nextDouble();
-   		if (random <= 0.5){
+   		if (generator.nextDouble() < 0.5) {
    			boy = true;	 
-			children ++;
+   			children++;
    		}
    		else {
    			girl = true;
-			children ++;
+   			children++;
    		}
 
 
@@ -45,6 +45,7 @@ import java.util.Random;
 				num4++;
 			}
 			num1 += children;
+			
 		}
 		double average = num1 / T;
 		System.out.println("Average: " + average + " children to get at least one of each gender.");
@@ -62,6 +63,9 @@ import java.util.Random;
 		} else {
 			                System.out.println("The most common number of children is 4 or more.");
 		}
+
+	}
+}
 		
 	}
 }
