@@ -8,10 +8,10 @@ import java.util.Random;
  *  Example usage: % java OneOfEachStats 1000 1
  */
 
-public class OneOfEachStats {
-	 public OneOfEachStats(){
-}
-   	public static void main (String[] args) {
+	public class OneOfEachStats {
+	
+		public static void main (String[] args) {
+
 		
 		int T = Integer.parseInt(args[0]);
 		int seed = Integer.parseInt(args[1]);
@@ -24,14 +24,17 @@ public class OneOfEachStats {
    		boolean girl = false;
 
    		while(!boy || !girl ){ 
+   			
    double random = generator.nextDouble();
    		if (random <= 0.5){
    			boy = true;	 
+			children ++;
    		}
    		else {
    			girl = true;
+			children ++;
    		}
-children ++;
+
 
 	}
 			if (children == 2) {
@@ -50,10 +53,10 @@ children ++;
 
 		System.out.println("Number of families with 3 children: " + num3);
 		                   System.out.println("Number of families with 4 children: " + num4);
-		if (num2 > num3) {
+		if (num2 > num3 && num2 > num4 ) {
 
 			               System.out.println("The most common number of children is 2.");
-		} else if (num3 > num4) {
+		} else if (num3 > num4 && num3 > num2) {
 
 			                 System.out.println("The most common number of children is 3.");
 		} else {
