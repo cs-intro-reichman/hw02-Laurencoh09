@@ -1,4 +1,4 @@
-   import java.util.Random;
+import java.util.Random;
 
 public class OneOfEachStats {
    	public static void main (String[] args) {
@@ -44,7 +44,7 @@ public class OneOfEachStats {
 		                  System.out.println("Number of families with 2 children: " + num2);
 
 		System.out.println("Number of families with 3 children: " + num3);
-		                   System.out.println("Number of families with 4 children: " + num4);
+		                   System.out.println("Number of families with 4 or more children: " + num4);
 		if (num2 > num3 && num2 > num4 ) {
 
 			               System.out.println("The most common number of children is 2.");
