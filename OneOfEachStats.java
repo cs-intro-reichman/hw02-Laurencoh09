@@ -8,8 +8,9 @@ import java.util.Random;
  *  Example usage: % java OneOfEachStats 1000 1
  */
 
-
 public class OneOfEachStats {
+	 public OneOfEachStats(){
+}
    	public static void main (String[] args) {
 		
 		int T = Integer.parseInt(args[0]);
