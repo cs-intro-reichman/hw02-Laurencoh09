@@ -3,6 +3,7 @@
  */
 
 
+
 public class Perfect {
    	public static void main (String[] args) {
         int x = Integer.parseInt(args[0]);
@@ -16,7 +17,7 @@ int counter = 1;
             if ( x % i == 0 ) {
                
 counter = counter + i;
-res = res+ " + " +i;
+res = res + " + " + i;
     }
 }
 if (counter == x){
@@ -31,4 +32,3 @@ else {
 
    		}
      
- 		
