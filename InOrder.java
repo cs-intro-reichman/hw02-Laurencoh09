@@ -1,9 +1,7 @@
  import java.util.Random;
 
-
 public class  InOrder {
    	public static void main (String[] args) {
-
    	    int num1 = -1;
    		int num2 = 0;
    		String res = "";
@@ -19,7 +17,7 @@ public class  InOrder {
             	break;
             }
         }
-        while( true );
+        while(true);
         System.out.println(res);
 
      
