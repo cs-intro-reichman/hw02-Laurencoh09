@@ -9,14 +9,11 @@ import java.util.Random;
  */
 
 
-public class OneOfEachStats {
+public class OneOfEachStats1 {
    	public static void main (String[] args) {
 
-		
 		int T = Integer.parseInt(args[0]);
-		int seed = Integer.parseInt(args[1]);
 		int num1 = 0, num2 = 0, num3 = 0, num4 = 0;
-		Random generator = new Random(seed);
 
 		for (int i = 1; i <= T; i++) {
 		int children = 0;
@@ -25,7 +22,7 @@ public class OneOfEachStats {
 
    		while(!boy || !girl ){ 
    			
-   double random = generator.nextDouble();
+   double random = Math.random();
    		if (random <= 0.5){
    			boy = true;	 
    		}
@@ -60,5 +57,6 @@ children ++;
 		} else {
 			                System.out.println("The most common number of children is 4 or more.");
 		}
+		
 	}
 }
