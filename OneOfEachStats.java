@@ -12,8 +12,11 @@ import java.util.Random;
 public class OneOfEachStats {
    	public static void main (String[] args) {
 
+		
 		int T = Integer.parseInt(args[0]);
+		int seed = Integer.parseInt(args[1]);
 		int num1 = 0, num2 = 0, num3 = 0, num4 = 0;
+		Random generator = new Random(seed);
 
 		for (int i = 1; i <= T; i++) {
 		int children = 0;
@@ -22,7 +25,7 @@ public class OneOfEachStats {
 
    		while(!boy || !girl ){ 
    			
-   double random = Math.random();
+   double random = generator.nextDouble();
    		if (random <= 0.5){
    			boy = true;	 
    		}
@@ -42,15 +45,17 @@ children ++;
 			num1 += children;
 		}
 		double average = num1 / T;
-	System.out.println("Average: " + average + " children to get at least one of each gender.");
+		System.out.println("Average: " + average + " children to get at least one of each gender.");
 
-	     System.out.println("Number of families with 2 children: " + num2);
+		                  System.out.println("Number of families with 2 children: " + num2);
 
-System.out.println("Number of families with 3 children: " + num3);
-	         System.out.println("Number of families with 4 children: " + num4);
+		System.out.println("Number of families with 3 children: " + num3);
+		                   System.out.println("Number of families with 4 children: " + num4);
 		if (num2 > num3) {
-		       System.out.println("The most common number of children is 2.");
+
+			               System.out.println("The most common number of children is 2.");
 		} else if (num3 > num4) {
+
 			                 System.out.println("The most common number of children is 3.");
 		} else {
 			                System.out.println("The most common number of children is 4 or more.");
