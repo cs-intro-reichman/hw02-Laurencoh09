@@ -3,7 +3,6 @@
  */
 
 
-
 public class Perfect {
    	public static void main (String[] args) {
         int x = Integer.parseInt(args[0]);
@@ -11,7 +10,7 @@ public class Perfect {
 if (x < 0) {
  System.out.println(x + " is not a perfect number ");
 }
-String res = x + " is a prefect number since " + x + " = 1"; 
+String res = x + " is a perfect number since " + x + " = 1"; 
 int counter = 1;
    		for (int i = 2; i < x-1; i++) {
             if ( x % i == 0 ) {
@@ -31,4 +30,3 @@ else {
    	}
 
    		}
-     
