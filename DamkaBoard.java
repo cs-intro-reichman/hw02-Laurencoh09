@@ -3,11 +3,12 @@
  */
 
 
- 
+
 public class DamkaBoard {
    	public static void main (String[] args) {
+        // TODO: you have identation mess here!
     int n = Integer.parseInt(args[0]);
-         for (int i = 0; i < n; i++) {
+         for (int i = 0; i < n; i++) { // TODO: use meanignfull variable names, like row, col, not i and a
              for (int a = 0; a < n; a++) {
 
              if (i % 2 == 0) {
