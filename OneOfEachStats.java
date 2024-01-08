@@ -11,6 +11,7 @@ public class OneOfEachStats {
 		Random generator = new Random(seed);
 
 		for (int i = 1; i <= T; i++) {
+			// TODO: identations!
 		int children = 0;
    		boolean boy = false; 
    		boolean girl = false;
